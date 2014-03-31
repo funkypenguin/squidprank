@@ -12,6 +12,5 @@ dhclient eth1
 
 # Arpspoof the default gw
 GATEWAY=`ip -4 route list 0/0 | cut -d ' ' -f 3`
-# /usr/bin/screen -S arpspoof -d -m /usr/sbin/arpspoof -i eth1 $GATEWAY
 
-# echo Done. Run "screen -S arpspoof" to see the arpspoof output
+echo Run "/usr/sbin/arpspoof -i eth1 $GATEWAY" to begin
